@@ -13,7 +13,7 @@ SkMTEB is the first comprehensive MTEB-style text embedding benchmark for Slovak
 |----------|------|
 | 📄 Paper (arXiv) | *(to be added)* |
 | 🤗 Models & Datasets | [huggingface.co/collections/slovak-nlp/skmteb](https://huggingface.co/collections/slovak-nlp/skmteb) |
-| 💻 Code | [github.com/slovak-nlp/skmteb](https://github.com/slovak-nlp/skmteb) |
+| 💻 Code | TBD: Part of MMTEB |
 
 ## Models
 
@@ -96,33 +96,6 @@ Both models are open-weight, locally deployable (no API required), and suitable 
 |---------|-------------|
 | SlovakSTS | [slovak-nlp/sklep](https://huggingface.co/datasets/slovak-nlp/sklep) (subset: sts) |
 | ⭐ SlovakSumSTS | [slovak-nlp/slovak-sts-synthetic](https://huggingface.co/datasets/slovak-nlp/slovak-sts-synthetic) |
-
-## Benchmark
-
-The benchmark spans 7 task types:
-
-| Task Type         | # Datasets | Description |
-|-------------------|:----------:|-------------|
-| Bitext Mining     | 6 | Cross-lingual parallel sentence alignment (Slovak–English, Slovak–Czech) |
-| Classification    | 7 | Sentiment, hate speech, topic, party, and gender classification |
-| Clustering        | 5 | Grouping news articles by topic, URL structure, and editorial category |
-| Pair Classification | 3 | Natural language inference and textual entailment |
-| Reranking         | 3 | Ranking candidate passages for a query (QA, pharmacy) |
-| Retrieval         | 5 | Document retrieval from news, encyclopedic, and FAQ corpora |
-| STS               | 2 | Semantic textual similarity scoring |
-
-7 brand-new datasets were created specifically for this work. 6 datasets overlap with MMTEB; the remaining 25 are unique to SkMTEB, covering Slovak-specific domains (medical/pharmacy, fact-checking, parliamentary), temporal ranges (2000–2025), and task formulations (summarization-as-retrieval, URL-based clustering).
-## Key Results
-
-Evaluation of **31 embedding models** on SkMTEB reveals:
-
-- **Best overall:** `multilingual-e5-large-instruct` (77.49), followed by `gemini-embedding-001` (77.23)
-- **`e5-sk-small`** (45M) matches `text-embedding-3-small` (70.48 vs. 70.56) — a proprietary API — at a fraction of the size
-- **`e5-sk-large`** (365M) is statistically equivalent to `text-embedding-3-large` (74.70 vs. 75.07; TOST 90% CI within ±2 pts)
-- Large models (>1B) show diminishing returns: `jina-embeddings-v4` (3.8B, 72.44) trails `nomic-embed-text-v2-moe` (330M, 72.58)
-- Existing Slovak NLU models (`slovakbert-*`) transfer poorly to embedding tasks
-- Bitext mining is largely solved (F1 > 90 for most models); clustering remains the hardest task (V-measure 17–50)
-- Vocabulary trimming preserves cross-lingual transfer: Slovak–English and Slovak–Czech bitext mining degrades by <1 F1 point
 
 
 ## Citation
