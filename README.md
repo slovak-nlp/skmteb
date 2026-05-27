@@ -15,6 +15,33 @@ SkMTEB is the first comprehensive MTEB-style text embedding benchmark for Slovak
 | 🤗 Models & Datasets | [huggingface.co/collections/slovak-nlp/skmteb](https://huggingface.co/collections/slovak-nlp/skmteb) |
 | 💻 Code | TBD: Part of MMTEB |
 
+## Usage
+
+Install [MTEB](https://github.com/embeddings-benchmark/mteb):
+
+```bash
+pip install mteb
+```
+
+Evaluate a model on the full SkMTEB benchmark:
+
+```python
+import mteb
+
+model = mteb.get_model("slovak-nlp/e5-sk-small")
+tasks = mteb.get_benchmark("SkMTEB")
+evaluation = mteb.MTEB(tasks=tasks)
+results = evaluation.run(model, output_folder="results/")
+```
+
+To evaluate on specific task types only:
+
+```python
+tasks = mteb.get_tasks(task_types=["Retrieval", "Classification"], languages=["slk"])
+evaluation = mteb.MTEB(tasks=tasks)
+results = evaluation.run(model, output_folder="results/")
+```
+
 ## Models
 
 Two compact Slovak embedding models were developed using vocabulary trimming (VT) on Multilingual E5 and fine-tuning on curated Slovak data from the skLEP benchmark:
