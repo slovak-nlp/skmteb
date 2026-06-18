@@ -11,7 +11,7 @@ SkMTEB is the first comprehensive MTEB-style text embedding benchmark for Slovak
 
 | Resource | Link |
 |----------|------|
-| 📄 Paper (arXiv) | *(to be added)* |
+| 📄 Paper (arXiv) | [arxiv.org/abs/2606.13647](https://arxiv.org/abs/2606.13647) |
 | 🤗 Models & Datasets | [huggingface.co/collections/slovak-nlp/skmteb](https://huggingface.co/collections/slovak-nlp/skmteb) |
 | 💻 Code | TBD: Part of MMTEB |
 
@@ -136,5 +136,8 @@ If you use SkMTEB in your work, please cite:
                Kn{\v{a}}{\v{z}}ekov{\'a}, Nat{\'a}lia and Ondrejov{\'a}, Vikt{\'o}ria},
   booktitle = {Proceedings of ACL},
   year      = {2026},
+  eprint    = {2606.13647},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2606.13647},
 }
 ```
