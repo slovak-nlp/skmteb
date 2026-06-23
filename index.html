@@ -102,6 +102,13 @@ h1.title{font-size:clamp(34px,5.4vw,60px); font-weight:900; margin:18px 0 6px; m
 .thesis{padding:64px 0 10px; text-align:center}
 .thesis-lead{font-size:clamp(24px,3.6vw,38px); font-family:Urbanist; font-weight:800; letter-spacing:-.02em; max-width:20ch; margin:0 auto; line-height:1.16; text-wrap:balance}
 .thesis-lead .hl{background:linear-gradient(transparent 62%, rgba(110,236,218,.55) 62%)}
+.thesis-cta{color:var(--ink); text-decoration:none; white-space:nowrap; cursor:pointer;
+  background:linear-gradient(transparent 62%, rgba(110,236,218,.55) 62%); background-size:100% 100%;
+  border-bottom:2px solid var(--mint-deep); padding-bottom:1px; transition:color .15s}
+.thesis-cta .arr{display:inline-block; margin-left:.18em; color:var(--mint-deep); font-weight:900;
+  transition:transform .2s ease}
+.thesis-cta:hover{color:var(--mint-deep); text-decoration:none}
+.thesis-cta:hover .arr{transform:translateY(4px)}
 .stat-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:34px}
 @media(max-width:760px){.stat-grid{grid-template-columns:repeat(2,1fr)}}
 .stat{background:#fff; border:1px solid var(--border); border-radius:var(--radius); padding:20px 18px; box-shadow:var(--shadow)}
@@ -324,7 +331,7 @@ footer .ack{max-width:60ch; font-size:13px; line-height:1.7; color:#a99fd0}
 
 <!-- THESIS -->
 <div class="wrap thesis">
-  <p class="thesis-lead">A <span class="hl">45M-parameter</span> Slovak model reaches <span class="hl">91%</span> of the best 560M multilingual model — and runs in your browser.</p>
+  <p class="thesis-lead">A <span class="hl">45M-parameter</span> Slovak model reaches <span class="hl">91%</span> of the best 560M multilingual model — and <a class="thesis-cta" href="#demo">runs right here in your browser<span class="arr">↓</span></a></p>
   <div class="stat-grid">
     <div class="stat"><div class="num">31</div><div class="lbl">datasets across 7 task types</div></div>
     <div class="stat"><div class="num">~4×</div><div class="lbl">the Slovak depth of MMTEB (8 tasks)</div></div>
