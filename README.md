@@ -11,6 +11,7 @@ SkMTEB is the first comprehensive MTEB-style text embedding benchmark for Slovak
 
 | Resource | Link |
 |----------|------|
+| 🌐 Website | [slovak-nlp.github.io/skmteb](https://slovak-nlp.github.io/skmteb/) — interactive leaderboard, efficiency chart, and an in-browser demo of `e5-sk-small` |
 | 📄 Paper (arXiv) | [arxiv.org/abs/2606.13647](https://arxiv.org/abs/2606.13647) |
 | 🤗 Models & Datasets | [huggingface.co/collections/slovak-nlp/skmteb](https://huggingface.co/collections/slovak-nlp/skmteb) |
 | 💻 Code | TBD: Part of MMTEB |
