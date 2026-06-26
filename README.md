@@ -14,14 +14,15 @@ SkMTEB is the first comprehensive MTEB-style text embedding benchmark for Slovak
 | 🌐 Website | [slovak-nlp.github.io/skmteb](https://slovak-nlp.github.io/skmteb/) — interactive leaderboard, efficiency chart, and an in-browser demo of `e5-sk-small` |
 | 📄 Paper (arXiv) | [arxiv.org/abs/2606.13647](https://arxiv.org/abs/2606.13647) |
 | 🤗 Models & Datasets | [huggingface.co/collections/slovak-nlp/skmteb](https://huggingface.co/collections/slovak-nlp/skmteb) |
-| 💻 Code | TBD: Part of MMTEB |
+| 🌐 Website | [slovak-nlp.github.io/skmteb](https://slovak-nlp.github.io/skmteb/) — interactive leaderboard, efficiency chart, and an in-browser demo of `e5-sk-small` |
+| 💻 Code | [slovak-nlp/mteb](https://github.com/slovak-nlp/mteb) |
 
 ## Usage
 
-Install [MTEB](https://github.com/embeddings-benchmark/mteb):
+Activate virtual environment and install [slovak-nlp/mteb](https://github.com/slovak-nlp/mteb) from repository.
 
 ```bash
-pip install mteb
+pip install git+https://github.com/slovak-nlp/mteb
 ```
 
 Evaluate a model on the full SkMTEB benchmark:
