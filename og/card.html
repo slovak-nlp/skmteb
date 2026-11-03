@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- Source of og.png, the 1200x630 social share card. Render it with:
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars \
+       --force-device-scale-factor=1 --window-size=1200,630 --screenshot=og.png og/card.html
+     (run from the repository root on the gh-pages branch) -->
+<html lang="en"><meta charset="utf-8"><link href="../fonts/fonts.css" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; }
+html, body { width: 1200px; height: 630px; }
+body { color: #180d3b; padding: 60px 80px 54px; display: flex; flex-direction: column;
+  font-family: "Plus Jakarta Sans", sans-serif; -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(1100px 460px at 78% -8%, rgba(110,236,218,.38), transparent 60%),
+    radial-gradient(900px 420px at 8% 0%, rgba(122,94,245,.20), transparent 55%), #fcfcfc; }
+.top { display: flex; justify-content: space-between; align-items: center; }
+.brand { font-family: Urbanist; font-weight: 900; letter-spacing: -.03em; font-size: 34px; }
+.brand b { color: #3d51f4; }
+.pill { font-weight: 700; font-size: 22px; color: #3d51f4; border: 2px solid #3d51f4; border-radius: 999px; padding: 4px 18px; }
+h1 { font-family: Urbanist; font-weight: 800; font-size: 68px; line-height: 1.04; letter-spacing: -.025em; margin-top: 40px; max-width: 900px; }
+.claim { font-size: 28px; line-height: 1.4; color: #473875; margin-top: 22px; max-width: 920px; }
+.claim mark { background: linear-gradient(transparent 55%, #6eecda 55%); color: #180d3b; font-weight: 700; }
+.stats { margin-top: auto; display: flex; gap: 56px; align-items: flex-end; }
+.stat b { display: block; font-family: Urbanist; font-weight: 800; font-size: 52px; line-height: 1; color: #3d51f4; }
+.stat span { font-size: 20px; color: #473875; }
+.url { margin-left: auto; font-size: 20px; color: #473875; }
+</style>
+<body>
+<div class="top"><span class="brand">Sk<b>MTEB</b></span><span class="pill">ACL 2026</span></div>
+<h1>A Massive Text Embedding Benchmark for Slovak</h1>
+<p class="claim">A <mark>45M-parameter</mark> Slovak model reaches <mark>91%</mark> of the best 560M multilingual model and runs in your browser.</p>
+<div class="stats">
+  <div class="stat"><b>31</b><span>datasets</span></div>
+  <div class="stat"><b>7</b><span>task types</span></div>
+  <div class="stat"><b>31</b><span>models evaluated</span></div>
+  <span class="url">slovak-nlp.github.io/skmteb</span>
+</div>
+</body></html>
